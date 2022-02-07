@@ -61,25 +61,33 @@ export default function DemoBar() {
       </div>
 
       <ul style={{ listStyleType: "none", width: "200px" }}>
-        {legends.map(({ fillStyle, hidden, text, datasetIndex, onClick }) => {
-          const id = `label-${datasetIndex}`;
-          return (
-            <li key={datasetIndex}>
-              <input
-                type="checkbox"
-                id={id}
-                name={text}
-                checked={!hidden}
-                onChange={onClick}
-                style={{
-                  accentColor: fillStyle,
-                  color: "white",
-                }}
-              />
-              <label htmlFor={id}>{text}</label>
-            </li>
-          );
-        })}
+        {legends.map(
+          ({
+            fillStyle,
+            hidden,
+            text,
+            datasetIndex,
+            toggleDatasetVisibility,
+          }) => {
+            const id = `label-${datasetIndex}`;
+            return (
+              <li key={datasetIndex}>
+                <input
+                  type="checkbox"
+                  id={id}
+                  name={text}
+                  checked={!hidden}
+                  onChange={toggleDatasetVisibility}
+                  style={{
+                    accentColor: fillStyle,
+                    color: "white",
+                  }}
+                />
+                <label htmlFor={id}>{text}</label>
+              </li>
+            );
+          }
+        )}
       </ul>
     </div>
   );

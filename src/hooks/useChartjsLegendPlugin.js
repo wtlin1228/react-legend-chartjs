@@ -15,7 +15,7 @@ export default function useChartJsLegendPlugin() {
               hidden,
               text,
               datasetIndex,
-              onClick: () => {
+              toggleDatasetVisibility: () => {
                 chart.setDatasetVisibility(
                   datasetIndex,
                   !chart.isDatasetVisible(datasetIndex)
