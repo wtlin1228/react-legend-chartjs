@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-legend-chartjs/static/css/main.e6c13ad2.css",
+    "main.js": "/react-legend-chartjs/static/js/main.ddee6656.js",
+    "index.html": "/react-legend-chartjs/index.html",
+    "main.e6c13ad2.css.map": "/react-legend-chartjs/static/css/main.e6c13ad2.css.map",
+    "main.ddee6656.js.map": "/react-legend-chartjs/static/js/main.ddee6656.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.ddee6656.js"
+  ]
+}
